@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing purpose",
+    "line": 2,
+    "id": "testing-purpose",
+    "tags": [
+      {
+        "name": "@Sanity",
+        "line": 1
+      }
+    ],
+    "uri": "addDealsToCusotmer.feature",
+    "elements": [
+      {
+        "id": "testing-purpose;able-to-delete-the-customer-created",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Able to delete the customer created",
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Visit free crm website",
+            "result": {
+              "status": "passed",
+              "duration": 15861000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Open deals tab and create new deal",
+            "result": {
+              "status": "passed",
+              "duration": 10253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify deal exists",
+            "result": {
+              "status": "passed",
+              "duration": 4581000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

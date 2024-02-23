@@ -1,0 +1,24 @@
+To run a specific test case we can run the below command.
+npx cypress run --spec "cypress/e2e/my-spec.cy.js"
+
+
+To run the entire scripts with browser in headless browser (By default cypress runs in headless mode)
+eg:npx cypress run --browser firefox
+eg:npx cypress run --browser chrome
+
+
+To run the entire scripts with specific browser in headed mode
+eg:npx cypress run --headed --browser chrome
+
+
+To generate html mochawesome reports 
+eg: npx cypress run --reporter mochawesome --spec '.\cypress\e2e\Sample Framework\Login.cy.js' --browser firefox
+
+
+To run entire scripts headed mode and specific browser and tags
+eg:npx cypress run --env tags="@Regression" --headed --browser chrome
+
+
+Run below command from the visual studio to get the execution reports in cypress dashboard.
+eg:npx cypress run --record --key 60610610-f1e8-485d-a88f-e98884ebfa12 --spec .\cypress\e2e\createcustomer.feature --headed --browser chrome
+

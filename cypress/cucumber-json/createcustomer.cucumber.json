@@ -1,0 +1,100 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create New contact as customer and add events, deals.",
+    "line": 2,
+    "id": "create-new-contact-as-customer-and-add-events,-deals.",
+    "tags": [],
+    "uri": "createcustomer.feature",
+    "elements": [
+      {
+        "id": "create-new-contact-as-customer-and-add-events,-deals.;able-to-create-new-customer-and-verify-the-same",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Able to Create new customer and verify the same",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Visit free crm website",
+            "result": {
+              "status": "passed",
+              "duration": 11579000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Create a new customer",
+            "result": {
+              "status": "passed",
+              "duration": 10048000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Verify Created customer",
+            "result": {
+              "status": "passed",
+              "duration": 3913000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-new-contact-as-customer-and-add-events,-deals.;able-to-add-events-to-customer-and-verify-the-same",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Able to add events to customer and verify the same",
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Load the created customer",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.xpath()`\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Create New contact as custo...`\n    at isElement (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145207:58)\n    at validateType (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145056:14)\n    at Object.isType (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145087:7)\n    at $Cy.pushSubject (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:138731:22)\n    at wrapped (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:138291:19)\nFrom Your Spec Code:\n    at crm_HomePage.logout (cypress/e2e/PageObjectModel/crm_HomePage.js:53:37)\n    at eval (cypress/e2e/createcustomer/createcustomer.js:87:11)\n    at eval (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:134:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Add event to customer",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Verify event added successfully",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

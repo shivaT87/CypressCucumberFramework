@@ -1,0 +1,55 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Integrating deals with customer and company details",
+    "line": 2,
+    "id": "integrating-deals-with-customer-and-company-details",
+    "tags": [],
+    "uri": "dealcreation.feature",
+    "elements": [
+      {
+        "id": "integrating-deals-with-customer-and-company-details;able-to-delete-the-customer-created",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Able to delete the customer created",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Create a new contact as customer",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` failed because it requires a DOM element.\n\nThe subject received was:\n\n  > `undefined`\n\nThe previous command that ran was:\n\n  > `cy.xpath()`\n\nBecause this error occurred during a `after each` hook we are skipping the remaining tests in the current suite: `Integrating deals with cust...`\n    at isElement (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145207:58)\n    at validateType (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145056:14)\n    at Object.isType (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:145087:7)\n    at $Cy.pushSubject (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:138731:22)\n    at wrapped (https://ui.cogmento.com/__cypress/runner/cypress_runner.js:138291:19)\nFrom Your Spec Code:\n    at crm_HomePage.logout (cypress/e2e/PageObjectModel/crm_HomePage.js:53:37)\n    at eval (cypress/e2e/dealcreation/dealcreation.js:45:13)\n    at eval (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:134:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Open deals and create deals associate with company and customer created",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify deal created successfully",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
